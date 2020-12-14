@@ -1,0 +1,30 @@
+<nav class="flex flex-row justify-center xl:mx-3 mt-9">
+  <button (click)="typeSkill = 'lenguage'" [ngClass]="(typeSkill == 'lenguage')? activeRoundedLeft: notActiveRoundedLeft">Lenguage</button>
+  <button (click)="typeSkill = 'platforms'" [ngClass]="(typeSkill == 'platforms')? active: notActive">Plataformas</button>
+  <button (click)="typeSkill = 'web'" [ngClass]="(typeSkill == 'web')? active: notActive">Web</button>
+  <button (click)="typeSkill = 'design'" [ngClass]="(typeSkill == 'design')? activeRoundedRight: notActiveRoundedRight">Diseño</button>
+</nav>
+
+<div [ngSwitch]="typeSkill">
+
+  <div *ngSwitchCase="'lenguage'">
+    <app-lenguage-skills></app-lenguage-skills>
+  </div>
+
+  <div *ngSwitchCase="'platforms'">
+    <app-platforms-skills></app-platforms-skills>
+  </div>
+
+  <div *ngSwitchCase="'web'">
+    <app-web-skills></app-web-skills>
+  </div>
+
+  <div *ngSwitchCase="'design'">
+    <app-design-skills></app-design-skills>
+  </div>
+
+  <div *ngSwitchDefault>
+    <app-lenguage-skills></app-lenguage-skills>
+  </div>
+
+</div>

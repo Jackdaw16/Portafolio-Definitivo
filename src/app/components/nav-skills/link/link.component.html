@@ -1,0 +1,15 @@
+<a [routerLink]="[router]"
+   routerLinkActive="active"
+   *ngIf="type === 'normal'"
+   class="bg-secondary text-primary font-quick hover:bg-primary hover:text-secondary text-xs p-1 md:text-base md:p-2 lg:text-xl lg:px-3 lg:py-2.5 xl:text-base xl:p-2">{{nombre}}</a>
+
+<a
+  [routerLink]="[router]"
+  routerLinkActive="active"
+  *ngIf="type === 'first'"
+  class="bg-secondary text-primary font-quick hover:bg-primary hover:text-secondary text-xs p-1 md:text-base md:p-2 lg:text-xl lg:px-3 lg:py-2.5 xl:p-2 xl:text-base rounded-tl-full rounded-bl-full">{{nombre}}</a>
+
+<a [routerLink]="[router]"
+   routerLinkActive="active"
+   *ngIf="type === 'last'"
+   class="bg-secondary text-primary font-quick hover:bg-primary hover:text-secondary text-xs p-1 md:text-base md:p-2 lg:text-xl lg:px-3 lg:py-2.5 xl:text-base xl:p-2 rounded-tr-full rounded-br-full">{{nombre}}</a>

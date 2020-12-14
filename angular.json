@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "demetrioPortFolio"
+  "defaultProject": "demetrioPortFolio",
+  "cli": {
+    "analytics": "12950781-2f55-4c47-9d7b-d4f7963897cb"
+  }
 }
