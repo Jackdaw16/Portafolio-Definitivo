@@ -15,8 +15,8 @@ module.exports = {
 
       colors: {
         gray: colors.trueGray,
-        'primary' : '#4056A1',
-        'secondary' : '#C6CBE3',
+        'primary' : '#388bfd',
+        'secondary' : '#BBD8FF',
         'dark-blue-900' : '#0D1117',
         'dark-blue-800' : '#161B22',
       }
