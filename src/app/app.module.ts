@@ -6,7 +6,6 @@ import { app_routing } from './app.routes';
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { NavSkillsComponent } from './components/nav-skills/nav-skills.component';
-import { LinkComponent } from './components/nav-skills/link/link.component';
 import { LenguageSkillsComponent } from './components/nav-skills/lenguage-skills/lenguage-skills.component';
 import { PlatformsSkillsComponent } from './components/nav-skills/platforms-skills/platforms-skills.component';
 import { WebSkillsComponent } from './components/nav-skills/web-skills/web-skills.component';
@@ -19,7 +18,6 @@ import { WorksComponent } from './components/works/works.component';
     AppComponent,
     AboutMeComponent,
     NavSkillsComponent,
-    LinkComponent,
     LenguageSkillsComponent,
     PlatformsSkillsComponent,
     WebSkillsComponent,
