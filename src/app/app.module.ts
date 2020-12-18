@@ -12,6 +12,8 @@ import { WebSkillsComponent } from './components/nav-skills/web-skills/web-skill
 import { DesignSkillsComponent } from './components/nav-skills/design-skills/design-skills.component';
 import { ExternalLinksComponent } from './components/external-links/external-links.component';
 import { WorksComponent } from './components/works/works.component';
+import { ProjectsComponent } from './components/works/projects/projects.component';
+import { WorksNavComponent } from './components/works/works-nav/works-nav.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { WorksComponent } from './components/works/works.component';
     DesignSkillsComponent,
     ExternalLinksComponent,
     WorksComponent,
+    ProjectsComponent,
+    WorksNavComponent,
   ],
   imports: [
     BrowserModule,

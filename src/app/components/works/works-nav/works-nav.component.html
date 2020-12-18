@@ -1,0 +1,13 @@
+<div class="flex flex-row justify-between">
+  <nav class="flex flex-row my-6 mx-10 space-x-10">
+    <a class="text-secondary hover:text-primary font-quick font-bold text-xl" routerLink="projects" routerLinkActive="active">Proyectos</a>
+    <a class="text-secondary hover:text-primary font-quick font-bold text-xl" href="#">Diseños</a>
+    <a class="text-secondary hover:text-primary font-quick font-bold text-xl" href="#">Animaciones</a>
+  </nav>
+
+  <div class="w-12 h-6 rounded-full bg-white transition duration-300 ease-in dark:bg-dark-blue-800 shadow my-6 mx-10 relative flex justify-end">
+    <button id="button" (click)="toggle()" class="bg-primary block absolute transition duration-300 ease-in dark:bg-secondary shadow w-6 h-6 rounded-full focus:outline-none" [ngClass]="(theme == 'dark')? darkTheme : lightTheme"></button>
+
+  </div>
+
+</div>

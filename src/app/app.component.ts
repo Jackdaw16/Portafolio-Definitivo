@@ -1,9 +1,19 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
+import {WorksComponent} from './components/works/works.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
-  title = 'demetrioPortFolio';
+export class AppComponent implements OnInit{
+
+  public constructor(private titleService: Title) { }
+
+  title = 'Juan Alejandro Demetrio Calderín';
+
+  ngOnInit(): void {
+    this.titleService.setTitle(this.title);
+  }
+
 }
