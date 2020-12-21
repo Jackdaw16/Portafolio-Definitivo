@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {WorksComponent} from './components/works/works.component';
 
 @Component({
   selector: 'app-root',
