@@ -1,0 +1,58 @@
+<div class="flex flex-row xsm:absolute justify-between w-screen bg-white transition duration-300 ease-in dark:bg-dark-blue-900 shadow">
+  <div class="w-12 h-6 rounded-full bg-white transition duration-300 ease-in dark:bg-dark-blue-800 shadow my-6 mx-10 relative flex justify-end">
+    <button id="button" (click)="toggle()" class="bg-primary p-1 block absolute transition duration-300 ease-in dark:bg-secondary shadow w-6 h-6 rounded-full focus:outline-none" [ngClass]="(theme == 'dark')? darkTheme : lightTheme">
+      <svg *ngIf="theme === 'white'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-secondary">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+      </svg>
+      <svg *ngIf="theme === 'dark'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary">
+        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+
+  <div (click)="showAndHidde()" class="my-6 mx-10">
+    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18">
+      <defs>
+        <style>.a{fill:#388bfd;}</style>
+      </defs>
+      <g transform="translate(-4.5 -10.125)">
+        <path class="a" d="M30.375,12.375H5.625A1.128,1.128,0,0,1,4.5,11.25h0a1.128,1.128,0,0,1,1.125-1.125h24.75A1.128,1.128,0,0,1,31.5,11.25h0A1.128,1.128,0,0,1,30.375,12.375Z"/>
+        <path class="a" d="M30.375,19.125H5.625A1.128,1.128,0,0,1,4.5,18h0a1.128,1.128,0,0,1,1.125-1.125h24.75A1.128,1.128,0,0,1,31.5,18h0A1.128,1.128,0,0,1,30.375,19.125Z" transform="translate(0 1.125)"/>
+        <path class="a" d="M30.375,25.875H5.625A1.128,1.128,0,0,1,4.5,24.75h0a1.128,1.128,0,0,1,1.125-1.125h24.75A1.128,1.128,0,0,1,31.5,24.75h0A1.128,1.128,0,0,1,30.375,25.875Z" transform="translate(0 2.25)"/>
+      </g>
+    </svg>
+  </div>
+
+</div>
+
+<div class="flex" [ngClass]="(isHidden == true)? hidden : notHidden">
+  <div class="fixed z-10 inset-0 bg-black opacity-50"></div>
+  <div class="h-full absolute w-1/2 z-20 top-0 right-0 bg-white dark:bg-dark-blue-900 flex flex-col p-3">
+    <div class="w-full flex justify-end p-3">
+      <svg (click)="showAndHidde()" xmlns="http://www.w3.org/2000/svg" width="18.582" height="18.577" viewBox="0 0 18.582 18.577">
+        <defs>
+          <style>.a{fill:#388bfd;}</style>
+        </defs>
+        <path class="a" d="M22.778,20.577l6.637-6.637a1.555,1.555,0,1,0-2.2-2.2l-6.637,6.637-6.637-6.637a1.555,1.555,0,1,0-2.2,2.2l6.637,6.637-6.637,6.637a1.555,1.555,0,0,0,2.2,2.2l6.637-6.637,6.637,6.637a1.555,1.555,0,0,0,2.2-2.2Z" transform="translate(-11.285 -11.289)"/>
+      </svg>
+    </div>
+    <a class="font-quick dark:text-white p-2" (click)="navegation = 'about-me'; showAndHidde()" [ngClass]="(navegation == 'about-me')? active : notActive">Sobre mí</a>
+    <a class="font-quick dark:text-white p-2" (click)="navegation = 'projects'; showAndHidde()" [ngClass]="(navegation == 'projects')? active : notActive">Proyectos</a>
+    <a class="font-quick dark:text-white p-2">Diseños</a>
+    <a class="font-quick dark:text-white p-2">Animaciones</a>
+  </div>
+</div>
+
+<div [ngSwitch]="navegation">
+  <div *ngSwitchCase="'about-me'">
+    <app-about-me></app-about-me>
+  </div>
+  <div *ngSwitchCase="'projects'">
+    <app-projects></app-projects>
+  </div>
+  <div *ngSwitchDefault>
+    <app-about-me></app-about-me>
+  </div>
+</div>
+
+

@@ -11,3 +11,28 @@
   color: #388bfd!important;
 }
 
+.contenedor::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+  width:7px;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: #388bfd;
+  border-radius: 20px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
