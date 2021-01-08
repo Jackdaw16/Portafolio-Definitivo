@@ -1,8 +1,18 @@
 <div class="w-screen h-screen flex flex-col xl:flex-row bg-gray-50 transition duration-300 ease-in dark:bg-dark-blue-900">
   <app-about-me></app-about-me>
-  <hr>
-  <app-works class="contents bg-gray-50"></app-works>
+  <hr class="xl:hidden border-secondary dark:border-primary">
 
-  <hr class="xl:hidden">
+  <div class="hidden overflow-hidden overflow-y-scroll xl:flex xl:flex-col">
+    <app-works class="contents"></app-works>
+    <hr class="border-secondary dark:border-primary">
+    <app-designs></app-designs>
+  </div>
+
+  <app-works class="contents xl:hidden"></app-works>
+  <hr class="border-secondary dark:border-primary xl:hidden">
+  <app-designs class="xl:hidden"></app-designs>
+
+  <hr class="xl:hidden border-secondary dark:border-primary">
   <app-footer class="xl:hidden"></app-footer>
+
 </div>

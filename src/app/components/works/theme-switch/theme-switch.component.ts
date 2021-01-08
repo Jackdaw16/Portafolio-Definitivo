@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-works-nav',
-  templateUrl: './works-nav.component.html',
+  selector: 'app-theme-switch',
+  templateUrl: './theme-switch.component.html',
 })
-export class WorksNavComponent implements OnInit {
+export class ThemeSwitchComponent implements OnInit {
 
   theme = 'white';
   html = document.getElementsByTagName('html')[0];

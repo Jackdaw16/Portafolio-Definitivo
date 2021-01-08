@@ -12,8 +12,9 @@ import { WebSkillsComponent } from './components/nav-skills/web-skills/web-skill
 import { DesignSkillsComponent } from './components/nav-skills/design-skills/design-skills.component';
 import { WorksComponent } from './components/works/works.component';
 import { ProjectsComponent } from './components/works/projects/projects.component';
-import { WorksNavComponent } from './components/works/works-nav/works-nav.component';
+import { ThemeSwitchComponent } from './components/works/theme-switch/theme-switch.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DesignsComponent } from './components/works/designs/designs.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,9 @@ import { FooterComponent } from './components/footer/footer.component';
     DesignSkillsComponent,
     WorksComponent,
     ProjectsComponent,
-    WorksNavComponent,
+    ThemeSwitchComponent,
     FooterComponent,
+    DesignsComponent,
   ],
   imports: [
     BrowserModule,

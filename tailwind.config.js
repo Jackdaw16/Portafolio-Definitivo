@@ -17,6 +17,7 @@ module.exports = {
         gray: colors.trueGray,
         'primary' : '#388bfd',
         'secondary' : '#BBD8FF',
+        'secondary-hover' : '#95C2FF',
         'dark-blue-900' : '#0D1117',
         'dark-blue-800' : '#161B22',
       }
