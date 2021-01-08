@@ -10,10 +10,10 @@ import { LenguageSkillsComponent } from './components/nav-skills/lenguage-skills
 import { PlatformsSkillsComponent } from './components/nav-skills/platforms-skills/platforms-skills.component';
 import { WebSkillsComponent } from './components/nav-skills/web-skills/web-skills.component';
 import { DesignSkillsComponent } from './components/nav-skills/design-skills/design-skills.component';
-import { ExternalLinksComponent } from './components/external-links/external-links.component';
 import { WorksComponent } from './components/works/works.component';
 import { ProjectsComponent } from './components/works/projects/projects.component';
 import { WorksNavComponent } from './components/works/works-nav/works-nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +24,10 @@ import { WorksNavComponent } from './components/works/works-nav/works-nav.compon
     PlatformsSkillsComponent,
     WebSkillsComponent,
     DesignSkillsComponent,
-    ExternalLinksComponent,
     WorksComponent,
     ProjectsComponent,
     WorksNavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
