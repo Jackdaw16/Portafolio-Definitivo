@@ -11,3 +11,33 @@
   color: #388bfd!important;
 }
 
+.custom-scroll {
+  scrollbar-color: #388bfd #BBD8FF;
+  scrollbar-width: thin;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.custom-scroll::-webkit-scrollbar:vertical {
+  width: 7px;
+}
+
+.custom-scroll::-webkit-scrollbar-button:increment,.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
+.custom-scroll::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #388bfd;
+  border-radius: 20px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
