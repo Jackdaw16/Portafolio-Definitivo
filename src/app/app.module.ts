@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { app_routing } from './app.routes';
 
 import { AppComponent } from './app.component';
@@ -33,7 +32,7 @@ import { DesignsComponent } from './components/works/designs/designs.component';
   ],
   imports: [
     BrowserModule,
-    app_routing
+    app_routing,
   ],
   providers: [],
   bootstrap: [AppComponent]

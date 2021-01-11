@@ -21,7 +21,7 @@
 }
 
 .custom-scroll::-webkit-scrollbar:vertical {
-  width: 7px;
+  width: 3px;
 }
 
 .custom-scroll::-webkit-scrollbar-button:increment,.custom-scroll::-webkit-scrollbar-button {
