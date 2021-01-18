@@ -14,6 +14,7 @@ import { ProjectsComponent } from './components/works/projects/projects.componen
 import { ThemeSwitchComponent } from './components/works/theme-switch/theme-switch.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DesignsComponent } from './components/works/designs/designs.component';
+import { AnimationsComponent } from './components/works/animations/animations.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { DesignsComponent } from './components/works/designs/designs.component';
     ThemeSwitchComponent,
     FooterComponent,
     DesignsComponent,
+    AnimationsComponent,
   ],
   imports: [
     BrowserModule,
