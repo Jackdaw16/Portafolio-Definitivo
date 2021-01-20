@@ -7,6 +7,10 @@
   src: local('Quicksand'), url("assets/fonts/Quicksand-Regular.ttf") format('ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .active {
   color: #388bfd!important;
 }

@@ -10,7 +10,8 @@ module.exports = {
       },
 
       width: {
-        '100' : '30rem'
+        '100' : '30rem',
+        '120' : '35rem'
       },
 
       colors: {

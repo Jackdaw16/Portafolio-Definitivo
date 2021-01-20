@@ -15,6 +15,7 @@ import { ThemeSwitchComponent } from './components/works/theme-switch/theme-swit
 import { FooterComponent } from './components/footer/footer.component';
 import { DesignsComponent } from './components/works/designs/designs.component';
 import { AnimationsComponent } from './components/works/animations/animations.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AnimationsComponent } from './components/works/animations/animations.co
     FooterComponent,
     DesignsComponent,
     AnimationsComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
