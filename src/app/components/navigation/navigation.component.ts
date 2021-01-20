@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ViewportScroller} from '@angular/common';
+
 
 @Component({
   selector: 'app-navigation',
@@ -9,11 +10,13 @@ export class NavigationComponent implements OnInit {
 
   constructor( private viewportScroller: ViewportScroller) { }
 
-  onClickScroll(elementId: string): void {
-    this.viewportScroller.scrollToAnchor(elementId);
-  }
+  active = 'bg-primary';
+  notActive = 'bg-secondary';
 
   ngOnInit(): void {
   }
 
+  smoothScroll(idName: string): void {
+    document.getElementById(idName).scrollIntoView({behavior: 'smooth'});
+  }
 }
