@@ -1,9 +1,9 @@
 <div class="flex">
   <div class="h-screen relative w-full contents">
-    <div class="flex flex-col absolute z-30 right-0 top-1/2 justify-around bg-white dark:bg-dark-blue-800 h-32 rounded-tl-lg rounded-bl-lg p-3" snScrollSpy id="foo">
-      <a class="rounded-full h-4 w-4 bg-primary" (click)="smoothScroll('works')"></a>
-      <a class="rounded-full h-4 w-4 bg-primary" (click)="smoothScroll('designs')"></a>
-      <a class="rounded-full h-4 w-4 bg-primary" (click)="smoothScroll('animations')"></a>
+    <div class="flex flex-col shadow transition duration-300 ease-in absolute z-30 right-0 top-1/2 justify-around bg-white dark:bg-dark-blue-800 h-32 rounded-tl-lg rounded-bl-lg p-3" snScrollSpy id="foo">
+      <a class="rounded-full h-4 w-4 bg-primary cursor-pointer hover:bg-secondary" (click)="smoothScroll('works')"></a>
+      <a class="rounded-full h-4 w-4 bg-primary cursor-pointer hover:bg-secondary" (click)="smoothScroll('designs')"></a>
+      <a class="rounded-full h-4 w-4 bg-primary cursor-pointer hover:bg-secondary" (click)="smoothScroll('animations')"></a>
     </div>
   </div>
 
