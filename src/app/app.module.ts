@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DesignsComponent } from './components/works/designs/designs.component';
 import { AnimationsComponent } from './components/works/animations/animations.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { ResponsiveNavComponent } from './components/responsive-nav/responsive-nav.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     DesignsComponent,
     AnimationsComponent,
     NavigationComponent,
+    ResponsiveNavComponent,
   ],
   imports: [
     BrowserModule,
