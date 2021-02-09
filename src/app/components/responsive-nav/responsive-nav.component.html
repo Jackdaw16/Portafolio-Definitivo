@@ -1,4 +1,4 @@
-<div class="flex flex-row fixed top-0 justify-between w-screen w-full bg-white transition duration-300 ease-in dark:bg-dark-blue-900 shadow">
+<div class="flex flex-row fixed top-0 justify-between w-screen w-full bg-white transition duration-300 ease-in dark:bg-dark-blue-900 shadow md:px-32">
   <div class="w-12 h-6 rounded-full bg-white transition duration-300 ease-in dark:bg-dark-blue-800 shadow my-6 mx-10 relative flex justify-end">
     <button id="button" (click)="toggle()" class="bg-primary p-1 block absolute transition duration-300 ease-in dark:bg-secondary shadow w-6 h-6 rounded-full focus:outline-none" [ngClass]="(theme == 'dark')? darkTheme : lightTheme">
       <svg *ngIf="theme === 'white'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-secondary">
