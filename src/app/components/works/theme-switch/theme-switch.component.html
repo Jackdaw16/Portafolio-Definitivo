@@ -1,6 +1,6 @@
-<div class="flex flex-row absolute top-0 left-0">
-  <div class="w-12 h-6 rounded-full bg-white transition duration-300 ease-in dark:bg-dark-blue-800 shadow my-6 mx-10 relative flex justify-end">
-    <button id="button" (click)="toggle()" class="bg-primary p-1 block absolute transition duration-300 ease-in dark:bg-secondary shadow w-6 h-6 rounded-full focus:outline-none" [ngClass]="(theme == 'dark')? darkTheme : lightTheme">
+<div class="contents xl:flex xl:flex-row xl:absolute xl:top-0 xl:left-0">
+  <div class="w-12 h-6 rounded-full bg-white transition duration-300 ease-in dark:bg-dark-blue-800 shadow my-6 mx-10 relative flex justify-end md:w-16 md:h-10 xl:w-12 xl:h-6">
+    <button id="button" (click)="toggle()" class="bg-primary p-1 block absolute transition duration-300 ease-in dark:bg-secondary shadow w-6 h-6 rounded-full focus:outline-none md:w-10 md:h-10 xl:w-6 xl:h-6" [ngClass]="(theme == 'dark')? darkTheme : lightTheme">
       <svg *ngIf="theme === 'white'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-secondary">
         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
       </svg>
