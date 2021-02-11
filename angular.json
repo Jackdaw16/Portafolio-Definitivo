@@ -28,6 +28,7 @@
               "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
             ],
             "scripts": [
+              "./node_modules/lazysizes/lazysizes.min.js",
               "./node_modules/jquery/dist/jquery.slim.min.js",
               "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"
             ]
