@@ -19,19 +19,19 @@
 
 <div class="contents">
   <div class="fixed z-10 inset-0 bg-black opacity-50" [ngClass]="(isHidden == true)? hidden : notHidden"></div>
-  <div class="h-full fixed w-1/2 z-20 top-0 right-0 hidden bg-white dark:bg-dark-blue-900 flex flex-col p-3 space-y-1 transition duration-300 ease-in" [ngClass]="(isHidden == true)? hiddeAnim : showAnim">
-    <div class="w-full flex justify-end p-3">
-      <svg (click)="showAndHidde()" xmlns="http://www.w3.org/2000/svg" width="18.582" height="18.577" viewBox="0 0 18.582 18.577">
+  <div class="h-full fixed w-1/2 z-20 top-0 right-0 bg-white dark:bg-dark-blue-900 flex flex-col p-3 space-y-1 transition duration-300 ease-out" [ngClass]="(isHidden == true)? hiddeAnim : showAnim">
+    <div class="w-auto flex justify-end p-3" [ngClass]="(isHidden == true)? hidden : notHidden">
+      <svg (click)="showAndHidde()" xmlns="http://www.w3.org/2000/svg" class="w-5 lg:w-10" viewBox="0 0 18.582 18.577">
         <defs>
           <style>.a{fill:#388bfd;}</style>
         </defs>
         <path class="a" d="M22.778,20.577l6.637-6.637a1.555,1.555,0,1,0-2.2-2.2l-6.637,6.637-6.637-6.637a1.555,1.555,0,1,0-2.2,2.2l6.637,6.637-6.637,6.637a1.555,1.555,0,0,0,2.2,2.2l6.637-6.637,6.637,6.637a1.555,1.555,0,0,0,2.2-2.2Z" transform="translate(-11.285 -11.289)"/>
       </svg>
     </div>
-    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('about-me'); showAndHidde()">Sobre mí</a>
-    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('works'); showAndHidde()">Proyectos</a>
-    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('design'); showAndHidde()">Diseños</a>
-    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('animations'); showAndHidde()">Animaciones</a>
+    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('about-me'); showAndHidde()" [ngClass]="(isHidden == true)? hidden : notHidden">Sobre mí</a>
+    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('works'); showAndHidde()" [ngClass]="(isHidden == true)? hidden : notHidden">Proyectos</a>
+    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('design'); showAndHidde()" [ngClass]="(isHidden == true)? hidden : notHidden">Diseños</a>
+    <a class="font-quick text-primary p-2 md:text-2xl" (click)="smoothScroll('animations'); showAndHidde()" [ngClass]="(isHidden == true)? hidden : notHidden">Animaciones</a>
   </div>
 </div>
 
