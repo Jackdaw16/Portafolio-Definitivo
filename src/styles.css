@@ -4,7 +4,9 @@
 @tailwind utilities;
 @font-face {
   font-family: Quicksand;
-  src: local('Quicksand'), url("assets/fonts/Quicksand-Regular.ttf") format('ttf');
+  font-weight: 200;
+  src: local('Quicksand'), url("assets/fonts/Quicksand-VariableFont_wght.ttf") format('ttf');
+  font-display: swap;
 }
 
 html {
