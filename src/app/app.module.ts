@@ -17,6 +17,8 @@ import { DesignsComponent } from './components/works/designs/designs.component';
 import { AnimationsComponent } from './components/works/animations/animations.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ResponsiveNavComponent } from './components/responsive-nav/responsive-nav.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { ResponsiveNavComponent } from './components/responsive-nav/responsive-n
   imports: [
     BrowserModule,
     app_routing,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
