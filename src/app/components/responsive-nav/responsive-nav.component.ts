@@ -10,7 +10,7 @@ export class ResponsiveNavComponent implements OnInit {
   notHidden = 'flex';
 
   hiddeAnim = 'transform translate-x-full';
-  showAnim = 'transform translate-x-0.4';
+  showAnim = 'transform translate-x-0.4 opacity-100';
 
   theme = 'white';
   html = document.getElementsByTagName('html')[0];

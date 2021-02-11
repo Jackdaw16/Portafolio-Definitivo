@@ -19,7 +19,7 @@
 
 <div class="contents">
   <div class="fixed z-10 inset-0 bg-black opacity-50" [ngClass]="(isHidden == true)? hidden : notHidden"></div>
-  <div class="h-full fixed w-1/2 z-20 top-0 right-0 bg-white dark:bg-dark-blue-900 flex flex-col p-3 space-y-1 transition duration-300 ease-out" [ngClass]="(isHidden == true)? hiddeAnim : showAnim">
+  <div class="h-full fixed w-1/2 z-20 top-0 right-0 bg-white dark:bg-dark-blue-900 flex flex-col p-3 space-y-1 transition opacity-0 duration-300 ease-out" [ngClass]="(isHidden == true)? hiddeAnim : showAnim">
     <div class="w-auto flex justify-end p-3" [ngClass]="(isHidden == true)? hidden : notHidden">
       <svg (click)="showAndHidde()" xmlns="http://www.w3.org/2000/svg" class="w-5 lg:w-10" viewBox="0 0 18.582 18.577">
         <defs>
