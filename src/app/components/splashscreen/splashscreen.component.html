@@ -1,4 +1,4 @@
-<div class="w-screen min-h-screen grid place-items-center">
+<div class="w-screen min-h-screen grid place-items-center absolute z-50 bg-white dark:bg-dark-blue-800" [ngClass]=" windowsWidth " *ngIf=" showSplash ">
   <canvas riv="ad_logo" class="w-56 h-56" width="500" height="500">
     <riv-player name="main" play></riv-player>
   </canvas>

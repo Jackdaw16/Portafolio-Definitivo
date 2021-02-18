@@ -7,12 +7,29 @@ import {Title} from '@angular/platform-browser';
 })
 export class AppComponent implements OnInit{
 
+  theme = 'white';
+  html = document.getElementsByTagName('html')[0];
+
+  isShowSplash = true;
+
   public constructor(private titleService: Title) { }
 
   title = 'Juan Alejandro Demetrio Calderín';
 
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
+
+    if (localStorage.getItem('theme')) {
+      this.theme = localStorage.getItem('theme');
+      console.log(localStorage.getItem('theme'));
+      this.html.classList.add(this.theme);
+    } else {
+      return;
+    }
+
+    setTimeout(() => {
+      this.isShowSplash = false;
+    }, 6300);
   }
 
 }
