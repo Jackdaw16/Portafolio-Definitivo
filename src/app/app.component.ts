@@ -19,6 +19,10 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
 
+    setInterval(() => {
+      this.isShowSplash = false;
+    }, 6300);
+
     if (localStorage.getItem('theme')) {
       this.theme = localStorage.getItem('theme');
       console.log(localStorage.getItem('theme'));
@@ -27,9 +31,6 @@ export class AppComponent implements OnInit{
       return;
     }
 
-    setTimeout(() => {
-      this.isShowSplash = false;
-    }, 6300);
   }
 
 }
