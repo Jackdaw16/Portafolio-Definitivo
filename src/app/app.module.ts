@@ -19,10 +19,6 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { ResponsiveNavComponent } from './components/responsive-nav/responsive-nav.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { SplashscreenComponent } from './components/splashscreen/splashscreen.component';
-import { CommonModule } from '@angular/common';
-import { RiveModule } from 'ng-rive';
-
 
 @NgModule({
   declarations: [
@@ -41,14 +37,11 @@ import { RiveModule } from 'ng-rive';
     AnimationsComponent,
     NavigationComponent,
     ResponsiveNavComponent,
-    SplashscreenComponent,
   ],
   imports: [
     BrowserModule,
     app_routing,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    CommonModule,
-    RiveModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
