@@ -24,9 +24,9 @@ module.exports = {
 
       colors: {
         gray: colors.trueGray,
-        'primary' : '#388bfd',
-        'secondary' : '#BBD8FF',
-        'secondary-hover' : '#95C2FF',
+        'primary' : '#008C89',
+        'secondary' : '#C7FFED',
+        'secondary-hover' : '#77F9CF',
         'dark-blue-900' : '#0D1117',
         'dark-blue-800' : '#161B22',
       }
@@ -38,4 +38,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

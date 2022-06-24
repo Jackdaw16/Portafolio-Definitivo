@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './footer.component.html',
 })
 export class FooterComponent implements OnInit {
+  year = new Date().getFullYear();
 
-  copyright = '@ 2020 Juan Alejandro Demetrio Calderín. All Rights Reserved';
+  copyright = '@ ' + this.year + ' Juan Alejandro Demetrio Calderín. All Rights Reserved';
 
   constructor() { }
 

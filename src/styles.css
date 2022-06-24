@@ -2,11 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: Quicksand;
   font-weight: 200;
   src: local('Quicksand'), url("assets/fonts/Quicksand-VariableFont_wght.ttf") format('ttf');
-  font-display: swap;
+  font-display: fallback;
+}
+
+* {
+  font-family: Quicksand, serif;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 html {
@@ -14,11 +23,11 @@ html {
 }
 
 .active {
-  color: #388bfd!important;
+  color: #008C89!important;
 }
 
 .custom-scroll {
-  scrollbar-color: #388bfd #BBD8FF;
+  scrollbar-color: #008C89 #C7FFED;
   scrollbar-width: thin;
 }
 
@@ -39,7 +48,7 @@ html {
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-  background-color: #388bfd;
+  background-color: #008C89;
   border-radius: 20px;
 }
 
